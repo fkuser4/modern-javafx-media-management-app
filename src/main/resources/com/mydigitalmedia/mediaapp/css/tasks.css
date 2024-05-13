@@ -1,0 +1,256 @@
+
+.filter-button:hover .plus-symbol{
+    -fx-text-fill: #dcdada;
+    -fx-effect: dropshadow(three-pass-box, rgb(227, 224, 224), 0, 0, 0, 0);
+
+}
+
+.filter-button:hover .filter-button-text-label{
+    -fx-text-fill:  #dcdada;
+    -fx-effect: dropshadow(three-pass-box, rgba(227, 224, 224), 0, 0, 0, 0);
+
+}
+
+.filter-flow-pane{
+
+}
+
+.filter-button {
+    -fx-background-color: #323144;
+    -fx-background-radius: 15px 15px 15px 15px;
+    -fx-min-width: 101px;
+    -fx-min-height: 22px;
+    -fx-max-width: 101px;
+    -fx-max-height: 22px;
+    -fx-alignment: center;
+    transition: transform 0.1s ease-in-out;
+}
+
+.filter-button:pressed {
+    -fx-background-color: #353554;
+}
+
+.plus-symbol {
+    -fx-font-family: "Segoe UI Symbol";
+    -fx-text-fill: #646283;
+    -fx-font-size: 23px;
+    -fx-font-weight: bolder;
+}
+
+.filter-button-text-label {
+    -fx-font-size: 13px;
+    -fx-font-family: "Segoe UI Symbol";
+    -fx-text-fill: #646283;
+}
+
+.filter-text-field{
+    -fx-background-color: transparent;
+    -fx-border-radius: 2px;
+    -fx-font-family: "Arial";
+    -fx-border-color: #726979;
+    -fx-prompt-text-fill: #9b9797;
+    -fx-text-fill: #cec9c9;
+    -fx-min-width: 220px;
+    -fx-min-height: 28px;
+}
+
+.svg-rightHbox{
+    -fx-fill: #605e81;
+}
+
+
+#addTask-button:hover .svg-rightHbox{
+    -fx-fill: #dcd8d8;
+    -fx-effect: dropshadow(three-pass-box, rgba(227, 224, 224), 0.3, 0, 0, 0);
+
+}
+
+#showHistory-button:hover .svg-rightHbox{
+
+    -fx-fill: #dcd8d8;
+    -fx-effect: dropshadow(three-pass-box, rgba(227, 224, 224), 0.3, 0, 0, 0);
+}
+
+#addTask-button{
+    /*-fx-background-color: #2f2b4d;*/
+    -fx-background-color: #323144;
+
+}
+
+#showHistory-button{
+    /*-fx-background-color: #2f2b4d;*/
+    -fx-background-color: #323144;
+
+}
+
+#addTask-button:hover{
+    /*-fx-background-color: #2f2b4d;*/
+    -fx-background-color: #353554;
+
+}
+
+#showHistory-button:hover{
+    /*-fx-background-color: #2f2b4d;*/
+    -fx-background-color: #353554;
+
+}
+
+.tasks-table-view{
+    -fx-background-color: transparent;
+}
+
+
+
+
+.table-view .scroll-bar {
+    -fx-background-color: transparent;
+    -fx-pref-width: 10px;
+}
+
+.table-view .scroll-bar .thumb {
+    -fx-background-color: #32323d;
+    -fx-background-radius: 7px;
+    -fx-opacity: 0.5;
+    -fx-min-height: 30px;
+    -fx-max-height: 30px;
+}
+
+.table-view .scroll-bar .increment-button,
+.table-view .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+}
+
+.table-view .scroll-bar .increment-arrow,
+.table-view .scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+}
+
+
+
+
+
+.table-view-placeholder-label{
+    -fx-text-fill: #e7e3e3;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-background-color: #232338;
+    -fx-font-family: "Segoe UI";
+    -fx-padding: 10px 5px 10px 15px;
+    -fx-border-radius: 2px;
+    -fx-alignment: center-left;
+}
+
+
+.table-view .column-header-background .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+.table-column{
+    -fx-border-color: transparent;
+}
+
+.table-row .table-cell{
+    -fx-text-fill: #e7e3e3;
+    -fx-background-color: transparent;
+    -fx-border-color: #24242d;
+    -fx-border-width: 8px 0 0 0;
+    -fx-padding: 15px 0 10px 15px;
+    -fx-alignment: center-left;
+}
+
+
+
+.table-row-cell:filled:selected, .table-row-cell:filled:selected:focused {
+    -fx-opacity: 1;
+    -fx-background-color: transparent;
+}
+
+.filter-hbox{
+    -fx-background-color: #323144;
+    -fx-background-radius: 15px 15px 15px 15px;
+    -fx-min-height: 22px;
+    -fx-max-height: 22px;
+    -fx-alignment: center;
+    transition: transform 0.1s ease-in-out;
+    -fx-padding: 0 10 0 5;
+}
+
+.filter-label{
+    -fx-font-size: 13px;
+    -fx-font-family: "Segoe UI Symbol";
+    -fx-text-fill: #646283;
+}
+
+#filter-remove-button{
+    -fx-background-color: transparent;
+}
+
+#filter-remove-button:hover .svg-filter{
+    -fx-fill: #ffffff;
+    -fx-effect: dropshadow(three-pass-box, rgba(255,255,255,1), 0, 0, 0, 0);
+
+}
+
+.svg-filter{
+    -fx-fill: #afaeb4;
+}
+
+
+.filter-combo-box .list-view{
+    -fx-background-color: #323144;
+    -fx-border-color: transparent;
+    -fx-font-family: "Arial";
+    -fx-text-fill: #cec9c9;
+}
+
+.filter-combo-box .combo-box .list-cell {
+    -fx-background-color: transparent;
+}
+
+.filter-combo-box .combo-box-popup .list-cell {
+    -fx-background-color: #323144;
+    -fx-text-fill: #cec9c9;
+}
+
+.filter-combo-box .combo-box-popup .list-cell:hover {
+    -fx-background-color: #2d2c3d;
+    -fx-text-fill: #cec9c9;
+}
+
+.filter-combo-box{
+    -fx-background-color: transparent;
+    -fx-border-color: #726979;
+    -fx-border-radius: 2px;
+    -fx-font-family: "Arial";
+    -fx-text-fill: #cec9c9;
+    -fx-min-width: 97px;
+    -fx-min-height: 21px;
+    -fx-max-height: 21px;
+}
+
+.svg-editTask{
+    -fx-fill: #7e7e85;
+}
+
+.svg-deleteTask{
+    -fx-fill: #bb3d3d;
+
+}
+
+.deleteTask-button{
+    -fx-background-color: transparent;
+}
+
+.editTask-button{
+    -fx-background-color: transparent;
+}
+
+.actions-hbox{
+    -fx-background-color: transparent;
+}
+

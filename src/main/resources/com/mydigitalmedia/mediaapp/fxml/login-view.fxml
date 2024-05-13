@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane fx:id="gridPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mydigitalmedia.mediaapp.ui.LoginController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+   </rowConstraints>
+   <children>
+      <StackPane fx:id="stackPane" prefHeight="569.0" prefWidth="300.0" GridPane.columnIndex="1">
+         <children>
+            <Canvas fx:id="canvas" height="400.0" width="299.0" />
+            <HBox fx:id="topRightBarHbox" maxHeight="20.0" prefHeight="12.0" prefWidth="300.0" StackPane.alignment="TOP_CENTER">
+               <children>
+                  <Button fx:id="minimizeButton" maxHeight="20.0" mnemonicParsing="false" onAction="#handleMinimizeButtonAction" text="Button" />
+                  <Button fx:id="closeButton" maxHeight="20.0" mnemonicParsing="false" onAction="#handleCloseButtonAction" text="Button" />
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+      <VBox fx:id="vBox" prefHeight="400.0" prefWidth="354.0">
+         <children>
+            <HBox fx:id="topLeftBarHbox" maxHeight="20.0" prefHeight="20.0" prefWidth="300.0" />
+            <ImageView fx:id="imageView" fitHeight="56.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin></ImageView>
+            <VBox prefHeight="313.0" prefWidth="300.0">
+               <children>
+                  <Label fx:id="loginLabel" text="Log in." />
+                  <TextField fx:id="usernameTextField" />
+                  <PasswordField fx:id="loginPasswordField" />
+                  <Hyperlink fx:id="forgotPasswordHyperlink" alignment="TOP_LEFT" contentDisplay="TOP" text="Forgot your password?" />
+                  <CheckBox fx:id="rememberMeCheckBox" mnemonicParsing="false" text="Remember Me" />
+                  <Button fx:id="loginButton" mnemonicParsing="false" onAction="#handleLoginButtonAction" text="LOGIN" />
+                  <Label fx:id="invalidLoginLabel" text="Invalid login credentials. Please try again." />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</GridPane>

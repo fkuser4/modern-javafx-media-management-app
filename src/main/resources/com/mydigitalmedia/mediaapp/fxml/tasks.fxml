@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="contentVBox" prefHeight="545.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mydigitalmedia.mediaapp.ui.TasksController">
+<children>
+    <HBox fx:id="controlsHbox" prefHeight="64.0" prefWidth="781.0" >
+        <children>
+            <FlowPane fx:id="filterFlowPane" prefHeight="62.0" prefWidth="750" minHeight="70"/>
+            <HBox fx:id="rightHbox" prefHeight="62.0" prefWidth="459.0">
+                <children>
+                    <Button fx:id="addTaskButton" onAction="#handleAddTaskAction" mnemonicParsing="false" text="Button" />
+                    <Button fx:id="showHistoryButton" onAction="#handleShowHistoryAction" mnemonicParsing="false" text="Button" />
+                    <TextField fx:id="filterTextField" />
+                </children>
+            </HBox>
+        </children>
+    </HBox>
+    <TableView fx:id="tasksTableView" prefHeight="490.0" prefWidth="781.0" minHeight="500">
+        <columns>
+            <TableColumn fx:id="taskNameColumn" prefWidth="80.79998779296875" text="C1" />
+            <TableColumn fx:id="assignedToColumn" prefWidth="77.60001373291016" text="C2" />
+            <TableColumn fx:id="platformColumn" prefWidth="85.59999692440033" text="C1" />
+            <TableColumn fx:id="dueDateColumn" prefWidth="72.79998779296875" text="C1" />
+            <TableColumn fx:id="priorityColumn" prefWidth="82.39996337890625" text="C1" />
+            <TableColumn fx:id="statusColumn" prefWidth="87.199951171875" text="C1" />
+            <TableColumn fx:id="actionsColumn" prefWidth="104.800048828125" text="C1" />
+        </columns>
+    </TableView>
+</children></VBox>

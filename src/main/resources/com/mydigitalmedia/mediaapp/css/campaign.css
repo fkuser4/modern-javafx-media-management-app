@@ -1,0 +1,104 @@
+.campaignContentVBox{
+    -fx-background-color: transparent;
+}
+
+.campaignScrollPane {
+    -fx-background-color: #24242d;
+}
+
+.campaignScrollPane .scroll-bar,
+.campaignScrollPane .scroll-bar:horizontal,
+.campaignScrollPane .scroll-bar:vertical,
+.campaignScrollPane .scroll-bar .thumb {
+    -fx-background-color: transparent;
+    -fx-opacity: 0;
+}
+
+.campaignScrollPane .scroll-bar .increment-button,
+.campaignScrollPane .scroll-bar .decrement-button,
+.campaignScrollPane .scroll-bar .increment-arrow,
+.campaignScrollPane .scroll-bar .decrement-arrow {
+    -fx-background-color: transparent;
+    -fx-opacity: 0;
+    -fx-min-height: 0;
+    -fx-min-width: 0;
+    -fx-pref-height: 0;
+    -fx-pref-width: 0;
+    -fx-max-height: 0;
+    -fx-max-width: 0;
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-shape: " ";
+}
+
+.campaignScrollPane .corner {
+    -fx-background-color: transparent;
+}
+
+.campaignFlowPane{
+    -fx-background-color: #24242d;
+}
+
+
+.taskCard{
+    -fx-background-color: #2d2d3d;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #2d2d3d;
+    -fx-border-width: 1;
+    -fx-padding: 10;
+    -fx-margin: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+
+.cardTaskName{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI";
+}
+
+.cardTaskLabel{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI";
+}
+
+.cardTaskText{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 13px;
+    -fx-font-family: "Segoe UI";
+    -fx-wrap-text: true;
+}
+
+.cardButtons{
+    -fx-background-color: rgba(45, 45, 45, 0.5);
+    -fx-border-radius: 1;
+    -fx-border-color: #242431;
+    -fx-border-width: 1;
+    -fx-text-fill: #969393;
+}
+
+.cardButtonsSelected{
+    -fx-background-color: rgb(137, 79, 218, 0.5);
+    -fx-border-radius: 1;
+    -fx-border-color: #242431;
+    -fx-border-width: 1;
+    -fx-text-fill: #ffffff;
+}
+
+.cardTaskCheckBox{
+    -fx-text-fill: #8d8aab;
+    -fx-font-size: 12px;
+    -fx-font-family: "Arial";
+    -fx-background-color: transparent;
+    -fx-padding: 1;
+}
+
+.cardTaskCheckBox .box{
+    -fx-border-color: #8d8aab;
+    -fx-background-color: transparent;
+    -fx-background-radius: 4, 4, 4, 4;
+    -fx-padding: 0.1px;
+}

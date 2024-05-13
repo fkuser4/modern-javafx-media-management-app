@@ -1,0 +1,40 @@
+
+.save-button{
+    -fx-background-color: #5ea9ff;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-font-family: "Segoe UI";
+    -fx-min-width: 105px;
+    -fx-min-height: 32px;
+}
+
+.logout-button{
+    -fx-background-color: #c53042;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-font-family: "Segoe UI";
+    -fx-min-width: 105px;
+    -fx-min-height: 37px;
+}
+
+.usernameLabel{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI";
+    -fx-text-fill: #ffffff;
+}
+
+.settings-text-field{
+    -fx-background-color: transparent;
+    -fx-border-radius: 2px;
+    -fx-font-family: "Arial";
+    -fx-border-color: #9b9797;
+    -fx-prompt-text-fill: #9b9797;
+    -fx-text-fill: #ffffff;
+    -fx-min-width: 460px;
+    -fx-min-height: 37px;
+}

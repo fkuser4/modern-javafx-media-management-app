@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="mainPane" maxWidth="1200" prefHeight="740" prefWidth="852.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mydigitalmedia.mediaapp.ui.EditTaskModalController">
+    <children>
+        <HBox fx:id="topHbox" prefHeight="50" prefWidth="1200"/>
+        <VBox fx:id="editTaskVbox" prefHeight="650" prefWidth="500" minWidth="700">
+            <children>
+                <HBox fx:id="labelAndCloseHbox" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label fx:id="modalTitleLabel" text="Label" />
+                        <Button fx:id="closeModalButton" onAction="#handleCloseModalAction" mnemonicParsing="false" text="Button" />
+                    </children>
+                </HBox>
+                <HBox  fx:id="platformNameAndAssignedToHbox" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <VBox fx:id="taskNameVbox" prefHeight="200.0" prefWidth="350">
+                            <children>
+                                <Label fx:id="taskNameLabel" text="Label" />
+                                <TextField fx:id="taskNameTextField" />
+                            </children>
+                        </VBox>
+                        <VBox fx:id="assignedToVbox" prefHeight="100.0" prefWidth="350">
+                            <children>
+                                <Label fx:id="assigenToLabel" text="Label" />
+                                <ComboBox fx:id="assignedToComboBox" prefWidth="150.0" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox fx:id="datesHbox" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <VBox fx:id="dueVbox" prefHeight="200.0" prefWidth="350">
+                            <children>
+                                <Label fx:id="dueLabel" text="Label" />
+                                <TextField fx:id="dueTextField" />
+                            </children>
+                        </VBox>
+                        <VBox fx:id="platformVbox" prefHeight="100.0" prefWidth="350">
+                            <children>
+                                <Label fx:id="platformLabel" text="Label" />
+                                <ComboBox fx:id="platfromComboBox" prefWidth="150.0" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox fx:id="priorityAndStatusHbox" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <VBox fx:id="priorityVbox" prefHeight="100.0" prefWidth="350">
+                            <children>
+                                <Label fx:id="priorityLabel" text="Label" />
+                                <ComboBox fx:id="priorityComboBox" prefWidth="150.0" />
+                            </children>
+                        </VBox>
+                        <VBox fx:id="statusVbox" prefHeight="100.0" prefWidth="350">
+                            <children>
+                                <Label fx:id="statusLabel" text="Label" />
+                                <ComboBox fx:id="statusComboBox" prefWidth="150.0" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox fx:id="descriptionHbox" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <VBox fx:id="descriptionVbox" prefHeight="100.0" prefWidth="350">
+                            <children>
+                                <Label fx:id="descriptionLabel" text="Label" />
+                                <TextArea fx:id="descriptionTextArea" />
+                            </children>
+                        </VBox>
+
+                    </children>
+                </HBox>
+                <HBox fx:id="clearFieldsAndEditTaskButtonsHbox" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button fx:id="clearFieldsButton" onAction="#handleClearFieldsAction" mnemonicParsing="false" text="Button" />
+                        <Button fx:id="editTaskButton" onAction="#handleEditTaskAction" mnemonicParsing="false" text="Button" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</Pane>

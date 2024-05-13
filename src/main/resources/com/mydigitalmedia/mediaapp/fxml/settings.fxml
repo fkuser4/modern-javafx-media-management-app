@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="contentVBox" prefHeight="84.0" prefWidth="781.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mydigitalmedia.mediaapp.ui.SettingsController">
+    <children>
+        <Label fx:id="usernameLabel" text="Label" />
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Label fx:id="twitterLabel" text="Twitter" />
+                <TextField fx:id="twitterTextField" />
+                <Button fx:id="saveTwitterUsernameButton"  onAction="#handleSaveTwitterUsernameButtonAction" mnemonicParsing="false" text="Button" />
+            </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Label fx:id="facebookLabel" text="Facebook" />
+                <TextField fx:id="facebookTextField" />
+                <Button fx:id="saveFacebookUsernameButton" onAction="#handleSaveFacebookUsernameButtonAction" mnemonicParsing="false" text="Button" />
+            </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Label fx:id="instagramLabel" text="Instagram" />
+                <TextField fx:id="instagramTextField" />
+                <Button fx:id="saveInstagramUsernameButton" onAction="#handleSaveInstagramUsernameButtonAction" mnemonicParsing="false" text="Button" />
+            </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Label fx:id="tikTokLabel" text="TikTok" />
+                <TextField fx:id="tikTokTextField" />
+                <Button fx:id="saveTikTokUsernameButton" onAction="#handleSaveTikTokUsernameAction" mnemonicParsing="false" text="Button" />
+            </children>
+        </HBox>
+        <Button fx:id="logoutButton" onAction="#handleLogoutAction" mnemonicParsing="false" text="Button" />
+    </children></VBox>
+

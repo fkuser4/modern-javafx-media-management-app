@@ -1,0 +1,88 @@
+.historyModalMainPane{
+    -fx-background-color: rgba(14, 13, 13, 0.5);
+
+}
+
+.historyModalMainVbox{
+    -fx-background-color: #222231;
+    -fx-border-color: #222231;
+}
+
+.historyModalTitleLabel{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI";
+}
+
+.historyModalTitleAndCloseHbox{
+
+}
+
+.historyModalScrollPane{
+    -fx-background-color: #222231;
+    -fx-border-color: #222231;
+
+}
+
+.historyModalScrollPane .content{
+    -fx-border-color: #222231;
+    -fx-background-color: #222231;
+
+}
+
+
+
+.historyModalContentVbox{
+    -fx-background-color: #222231;
+    -fx-border-color: #222231;
+    -fx-border-width: 10;
+}
+
+.historyModalScrollPane .scroll-bar {
+    -fx-background-color: transparent;
+    -fx-pref-width: 10px;
+}
+
+.historyModalScrollPane .scroll-bar .thumb {
+    -fx-background-color: #32323d;
+    -fx-background-radius: 7px;
+    -fx-opacity: 0.5;
+    -fx-min-height: 30px;
+    -fx-max-height: 30px;
+}
+
+.historyModalScrollPane .scroll-bar .increment-button,
+.historyModalScrollPane .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+}
+
+.historyModalScrollPane .scroll-bar .increment-arrow,
+.historyModalScrollPane .scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+}
+
+.taskHistoryHboxItem{
+    -fx-background-color: #2b2b3a;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #222231;
+}
+
+.taskHistoryLabelItem{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 12px;
+}
+
+.taskHistoryHyperlinkItem{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 12px;
+    -fx-font-family: "Segoe UI";
+    -fx-font-smoothing-type: lcd;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.taskHistoryHyperlinkItem:visited {
+    -fx-underline: false;
+}
+

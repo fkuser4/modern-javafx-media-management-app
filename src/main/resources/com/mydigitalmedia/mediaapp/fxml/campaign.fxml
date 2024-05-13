@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="campaignContentVBox" prefHeight="84.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mydigitalmedia.mediaapp.ui.CampaignController">
+   <children>
+      <ScrollPane fx:id="campaignScrollPane" prefHeight="200.0" prefWidth="200.0">
+         <content>
+            <FlowPane fx:id="campaignFlowPane" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

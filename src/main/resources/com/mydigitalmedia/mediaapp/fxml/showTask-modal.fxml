@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="showTaskMainPane" maxWidth="1200" prefHeight="740" prefWidth="852.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mydigitalmedia.mediaapp.ui.ShowTaskModalController">
+    <children>
+        <HBox fx:id="showTaskTopHbox" prefHeight="50" prefWidth="1200"/>
+        <VBox fx:id="showTaskMainVbox" prefHeight="650" prefWidth="500" minWidth="700">
+            <children>
+                <HBox fx:id="showTaskTitleLabelAndCloseButtonHbox" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label fx:id="showTaskTitleLabel" text="Label" />
+                        <Button fx:id="showTaskCloseButton" onAction="#handleCloseModalAction" mnemonicParsing="false" text="Button" />
+                    </children>
+                </HBox>
+                <HBox  fx:id="showTaskNameAndAssignedToHbox" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <VBox fx:id="showTaskNameVbox" prefHeight="200.0" prefWidth="350">
+                            <children>
+                                <Label fx:id="showTaskNameLabel" text="Label" />
+                                <HBox fx:id="showTaskNameHbox" />
+                            </children>
+                        </VBox>
+                        <VBox fx:id="showTaskNameAssignedToVbox" prefHeight="100.0" prefWidth="350">
+                            <children>
+                                <Label fx:id="showTaskAssignedToLabel" text="Label" />
+                                <HBox fx:id="showTaskAssignedToHbox" prefWidth="150.0" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox fx:id="showTaskDueToAndPlatformHbox" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <VBox fx:id="showTaskDueToVbox" prefHeight="200.0" prefWidth="350">
+                            <children>
+                                <Label fx:id="showTaskDueToLabel" text="Label" />
+                                <HBox fx:id="showTaskDueToHbox" />
+                            </children>
+                        </VBox>
+                        <VBox fx:id="showTaskPlatformVbox" prefHeight="100.0" prefWidth="350">
+                            <children>
+                                <Label fx:id="showTaskPlatformLabel" text="Label" />
+                                <HBox fx:id="showTaskPlatformHbox" prefWidth="150.0" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox fx:id="showTaskPriorityAndStatusHbox" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <VBox fx:id="showTaskPriorityVbox" prefHeight="100.0" prefWidth="350">
+                            <children>
+                                <Label fx:id="showTaskPriorityLabel" text="Label" />
+                                <HBox fx:id="showTaskPriorityHbox" prefWidth="150.0" />
+                            </children>
+                        </VBox>
+                        <VBox fx:id="showTaskStatusVbox" prefHeight="100.0" prefWidth="350">
+                            <children>
+                                <Label fx:id="showTaskStatusLabel" text="Label" />
+                                <HBox fx:id="showTaskStatusHbox" prefWidth="150.0" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox fx:id="showTaskDescriptionHbox" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <VBox fx:id="showTaskDescriptionVbox" prefHeight="100.0" prefWidth="350">
+                            <children>
+                                <Label fx:id="showTaskDescriptionLabel" text="Label" />
+                                <HBox fx:id="showTaskDescriptionLabelHbox" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</Pane>

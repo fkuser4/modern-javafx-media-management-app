@@ -1,0 +1,57 @@
+
+.showTaskMainPane{
+    -fx-background-color: rgba(14, 13, 13, 0.5);
+}
+
+.showTaskMainVbox{
+    -fx-background-color: #222231;
+    -fx-border-color: #222231;
+}
+
+.showTaskTitleLabel{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI";
+}
+
+.showTaskLabels{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI";
+}
+
+.showTaskCloseButton{
+
+}
+
+.showTaskCloseButton-svg{
+    -fx-fill: #afaeb4;
+}
+
+
+#showTaskCloseButton:hover .showTaskCloseButton-svg{
+    -fx-fill: #ffffff;
+    -fx-effect: dropshadow(three-pass-box, rgba(255,255,255,1), 0, 0, 0, 0);
+
+}
+
+#showTaskCloseButton{
+    -fx-background-color: transparent;
+
+}
+
+.showTaskText{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 13px;
+    -fx-font-family: "Segoe UI";
+    -fx-wrap-text: true;
+}
+
+.showOldTaskText{
+    -fx-text-fill: #d94646;
+    -fx-font-size: 13px;
+    -fx-font-family: "Segoe UI";
+    -fx-wrap-text: true;
+}
